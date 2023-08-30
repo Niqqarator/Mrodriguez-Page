@@ -10,37 +10,219 @@
     
 </head>
 <body>
-    <section class="home" id="home">
+    <header class="home" id="home-section">
         <div class="background-image"></div>
-            <div class="container-fluid">
+                <div class="container-nav-bar">
                 <div class="image-logo">
-                    <img src="/14-Proyecto/Fama-Images/Icons/Icon_perfil.png" class="image-fluid" alt="black-logo"  id="logo-image">
+                    <img src="/14-Proyecto/Fama-Images/Icons/Icon_perfil.png" class="image-fluid" alt="black-logo"  id="logo">
                 </div>
                 <div class="list">
                     <ul class="list-nav-bar">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#">Music</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">About</a></li>
+                        <li class="list-item"><a href="#home-section">Home</a></li>
+                        <li><a href="#music-section">Music</a></li>
+                        <li><a href="#carrousel">Videos</a></li>
+                        <!---<li><a href="#">News</a></li> -->
+                        <li><a href="#about">About</a></li>
                     </ul>
                 </div>
-                <div class="sidebar">
+                <div class="sidebar-container">
+                    <div class="sidebar">
                     <ul class="social-links">
-                    <li><a href="https://www.youtube.com/@mrodriguezmusik" target="_blank"><i class="bi bi-youtube"></i></a></li>
-                    <li><a href="https://www.instagram.com/mrodriguezmusik/?hl=es-la" target="_blank"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100050507958504" target="_blank"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="https://open.spotify.com/artist/3w13fOLhbYgWgcHu1SctCb?si=WcvXUBm5RZmxjJtCL7Rw7w&utm_source=copy-link" target="_blank"><i class="bi bi-spotify"></i></a></li>
-                </ul>
+                        <li><a href="https://www.youtube.com/@mrodriguezmusik" target="_blank" data-title="YouTube"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/mrodriguezmusik/?hl=es-la" target="_blank" data-title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100050507958504" target="_blank" data-title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://open.spotify.com/artist/3w13fOLhbYgWgcHu1SctCb?si=WcvXUBm5RZmxjJtCL7Rw7w&utm_source=copy-link" target="_blank" data-title="Spotify"><i class="bi bi-spotify"></i></a></li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-        <main>
         <h1 class="main-title">WELCOME TO GROVESTREET</h1>
-        </main>
+    </header>
+    <section class="music" id="music-section">
+    <div class="container-fluid" id="container-music">
+        <!-- ... (contenido de la sección de música) ... -->
+        <h1 class="music-title"> This is Mrodriguez</h1>
+        <div id="container-buttons">
+            <a href="https://open.spotify.com/artist/3w13fOLhbYgWgcHu1SctCb?si=WcvXUBm5RZmxjJtCL7Rw7w&utm_source=copy-link" target="_blank" data-title="Spotify"><button class="btn btn-success" id="spotify"><i class="bi bi-spotify"></i>Spotify</button></a>
+            <a href="https://soundcloud.com/mrodriguezmusik?ref=clipboard&p=a&c=1&si=6571be1c37324ae58c861a47ea79b542&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" data-title="soundcloud"><button class="btn btn-warning" id="soundcloud"><img src="/14-Proyecto/Fama-Images/Icons/soundcloud.png" class="soundcloud-logo" alt="soundcloud-logo"> Soundcloud</button></a>
     </div>
-    </section>
-    
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </div>
+    <div class="container">
+        <!-- La fila 1 -->
+        <div class="row row-eq-height">
+            <!-- La columna 1 -->
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <img src="/14-Proyecto/Fama-Images/Cards/AFINKA!.jpg" class="card-img-top" alt="AFINKA">
+                    <div class="overlay">
+                        <div class="buttons-container">
+                            <!-- Aquí van los botones -->
+                            <a href="https://open.spotify.com/intl-es/album/3KXEHrinJ4M5lwoZBPnu0v" target="_blank" data-title="Afinka-spo"><button type="button" class="btn btn-spo">Spotify</button></a>
+                            <a href="https://www.youtube.com/watch?v=7MDP2bVMvzg&t=25s" target="_blank" data-title="Afinka-you"><button type="button" class="btn btn-you">YouTube</button></a>
+                            <a href="https://soundcloud.com/mrodriguezmusik/mrodriguez-afinka" target="_blank" data-title="afinka-sou"><button type="button" class="btn btn-sou">Soundcloud</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- La columna 2 -->
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <img src="/14-Proyecto/Fama-Images/Cards/CH38_Square.jpg" class="card-img-top" alt="Lolly">
+                    <div class="overlay">
+                        <div class="buttons-container">
+                            <!-- Aquí van los botones -->
+                            <a href="https://open.spotify.com/intl-es/track/2mFr2EoDLRtulpM1ftqI8P" target="_blank" data-title="lolly-spo"><button type="button" class="btn btn-spo">Spotify</button></a>
+                            <a href="https://www.youtube.com/watch?v=5SRjvgWuTjU" target="_blank" data-title="Lolly-you"><button type="button" class="btn btn-you">Youtube</button></a>
+                            <a href="https://soundcloud.com/cuttinheadzmusic/harvy-valencia-mrodriguez-lolly" target="_blank" data-title="lolly-sou"><button type="button" class="btn btn-sou">Soundcloud</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- La fila 2 -->
+        <div class="row row-eq-height">
+            <!-- La columna 3 -->
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <img src="/14-Proyecto/Fama-Images/Cards/en Fuego .jpg" class="card-img-top" alt="Fuego">
+                    <div class="overlay">
+                        <div class="buttons-container">
+                            <!-- Aquí van los botones -->
+                            <a href="https://open.spotify.com/intl-es/track/5bYhTxBDC3D6uiFbHE6GIu" target="_blank" data-title="enfuego-spo"><button type="button" class="btn btn-spo">Spotify</button></a>
+                            <a href="https://www.youtube.com/watch?v=2m5GJIWachg&pp=ygUTbXJvZHJpZ3VleiBlbiBmdWVnbw%3D%3D" target="_blank" data-title="enfuego-you"><button type="button" class="btn btn-you">YouTube</button></a>
+                            <a href="https://soundcloud.com/mrodriguezmusik/mrodriguez-lshorty-flxres-en-fuego" target="_blank" data-title="enfuego-sou"><button type="button" class="btn btn-sou">Soundcloud</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- La columna 4 -->
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <img src="/14-Proyecto/Fama-Images/Cards/1671984711915.jpg" class="card-img-top" alt="candela">
+                    <div class="overlay">
+                        <div class="buttons-container">
+                            <!-- Aquí van los botones -->
+                            <a href="https://open.spotify.com/intl-es/track/3GxKKHkh5l9212tehc8Hnk" target="_blank" data-title="candela-spo"><button type="button" class="btn btn-spo">Spotify</button></a>
+                            <a href="https://www.youtube.com/watch?v=RsrNP-rBEuI" target="_blank" data-title="candela-you"><button type="button" class="btn btn-you">YouTube</button></a>
+                            <a href="https://soundcloud.com/mrodriguezmusik/mrodriguez-candela-fuego-ft-lshorty" target="_blank" data-title="candela-sou"><button type="button" class="btn btn-sou">Soundcloud</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</html>
+        <!-- La fila 3 -->
+        <div class="row row-eq-height">
+            <!-- La columna 5 -->
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <img src="/14-Proyecto/Fama-Images/Cards/AFRODISIACO-2-(plataformas).jpg" class="card-img-top"
+                        alt="Afrodisiaco-2">
+                    <div class="overlay">
+                        <div class="buttons-container">
+                            <!-- Aquí van los botones -->
+                            <a href="https://open.spotify.com/intl-es/track/3vLLS0MuplULvIe7Z0C6zY" target="_blank" data-title="Afrodisiaco2-spo"><button type="button" class="btn btn-spo">Spotify</button></a>
+                            <a href="https://www.youtube.com/watch?v=z4eFPSaIZdw" target="_blank" data-title="afrodisiaco2-you"><button type="button" class="btn btn-you">YouTube</button></a>
+                            <a href="https://soundcloud.com/mrodriguezmusik/mrodriguez-gustavo-dominguez-flxres-afrodisiaco-2" target="_blank" data-title="afrodisiaco2-sou"><button type="button" class="btn btn-sou">Soundcloud</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- La columna 6 -->
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <img src="/14-Proyecto/Fama-Images/Cards/TOXIC XD0000.jpg" class="card-img-top" alt="toxic">
+                    <div class="overlay">
+                        <div class="buttons-container">
+                            <!-- Aquí van los botones -->
+                            <a href="https://open.spotify.com/intl-es/track/0Ar3seSEacKJMWuvez7BIS" target="_blank" data-title="toxic-spo"><button type="button" class="btn btn-spo">Spotify</button></a>
+                            <a href="https://www.youtube.com/watch?v=aBKiVTPCbT0" target="_blank" data-title="toxic-you"><button type="button" class="btn btn-you">YouTube</button></a>
+                            <a href="https://soundcloud.com/mrodriguezmusik/mrodriguez-toxic" target="_blank" data-title="toxic-sou"><button type="button" class="btn btn-sou">Soundcloud</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--seccion del carrusel-->
+<section id="carrousel">
+    <h1 class="video-title">Music videos</h1>
+    <div class="carousel-container mx-auto">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carrusel de Videos -->
+            <div class="carousel-inner">
+                <!-- Video 1 -->
+                <div class="carousel-item active">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/J--nHT2DQUc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aBKiVTPCbT0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2m5GJIWachg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Video 4 -->
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xRaf79H1wwg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Video 5 -->
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0eX9qWWsRn8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Video 6 -->
+                <div class="carousel-item">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5USHgOBOw0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles -->
+            <a class="carousel-control-prev custom-carousel-control" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next custom-carousel-control" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>
+    </div>
+</section>
+</section>
+<section id="about" class="bio">
+        <div class="image-container">
+        <img src="/14-Proyecto/Fama-Images/Backgrounds/Bio2.jpg" class="bio-image" alt="Mrodriguez-biografia">
+    </div>  
+        <div class="container-text">  
+        <div class="paragraph">
+            <p class="text">
+            Miguelangel Rodriguez better known as "Mrodriguez" is a young producer & dj borned in La Guaira, Venezuela.
+            Known by his great perfomance and extensive repertoire styles at the time to producing and mixing, his carreer like a producer began in 2018 and release his first track under the seal of the popular spanish record label “Distance Music” having a great receivement.
+            Influenced by different sounds, Mrodriguez has built along his carreer an unique escense, being able to move between musical genres that go from minimal tech groove 
+            to melodic and darkest Afro House.
+            Being able to sign with big records label of minimal house and
+            at the same time  take the highest places of the top afro and organic house. 
+            </p>
+        </div>
+        </div>
+</section>
+<script src="/14-Proyecto/Javascript/script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+</html> 
